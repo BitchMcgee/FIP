@@ -1,0 +1,388 @@
+@charset "UTF-8"; 
+/* CSS Document */
+
+/*Remove this rule, this is only for demo purposes to make the boxes black with white text
+The line height on the <p> tag gives each box a height value*/
+
+/*p
+{
+	color: #fff;
+	line-height: 100px;
+	background: #000;
+	text-align: center;
+	margin: 0;
+}*/
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img 
+{ 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body 
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+#topBar
+{
+	background-color: #000;
+	height: 20px;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer 
+{
+	margin: 0 auto;
+	width: 920px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+	margin-top: 40px;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	border-bottom: solid 1px #DDD;
+}
+
+/*This is a flex item*/
+#logo
+{
+	width: 200px;
+}
+
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+#mainNav 
+{
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: auto;
+	width: 800px;
+	font-size: 20px;
+}
+/* ATTEMPT AT TRIANGLE */
+/*.home {
+	/*width: 0px;
+	height: 0px;
+	border-style: inset;
+	border-width: 0 100px 173.2px 100px;
+	border-color: transparent transparent #007bff transparent;
+	float: left;
+	transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+ 	-moz-transform: rotate(360deg);
+ 	-webkit-transform: rotate(360deg);
+ 	-o-transform: rotate(360deg);
+ 	width: 0px;
+	height: 0px;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #555;
+}
+
+.home p {
+	text-align: center;
+	top: 80px;
+	left: -47px;
+	position: relative;
+	width: 93px;
+	height: 93px;
+	margin: 0px;
+}*/
+#promo 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+/*Get rid of this, here just to give different height to promo*/
+/*#promo p 
+{
+	line-height: 250px;
+}
+*/
+#promoText 
+{
+	margin: 0px;
+	padding: 0px;
+	width: 600px;
+	font-size: 18px;
+}
+.promoText h2 
+{
+	font-size: 35px;
+}
+.promoText p 
+{
+	font-size: 27px;
+}
+#promoImage 
+{
+	margin-left: auto;
+	width: 280px;
+}
+
+#productInfo 
+{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 5px;
+}
+
+/*Get rid of this, here just to give different height to productInfo*/
+#productInfo h2 
+{
+	text-align: center;
+	font-size: 20px;
+	/*line-height: 300px;*/
+	
+}
+#productInfo p 
+{
+	text-align: center;
+	font-size: 20px;
+	padding: 10px 10px 10px 10px;
+}
+.productInfo img {
+	display: flex;
+	flex-direction: row;
+}
+/*.thumb1 {
+	text-align: center;
+	color: white;
+}*/
+.productDesc1
+{
+	/*padding: 10px 20px 10px 10px;*/
+	display: block;
+	margin-left: 0px;
+	width: 200px;
+	/*position: absolute;*/
+}
+
+.productDesc2
+{	
+	/*padding: 10px 10px 10px 50px;*/
+	display: block;
+	width: 200px;
+
+	
+}
+.productDesc3
+{
+	width: 200px;
+	/*position: absolute;*/
+}
+.productDesc4
+{
+	width: 200px;
+	/*position:*/ 
+}
+#mainFooter 
+{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#footerNav 
+{
+	flex-direction: row;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: auto;
+	width: 500px;
+	font-size: 20px;
+}
+
+
+#copyRight 
+{
+	margin-left: auto;
+	width: 310px;
+}
+
+/*Page 2 - Notice we are using one style sheet for all of the pages*/
+
+#contentCon {
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+/*Get rid of this, here just to give different height to promo*/
+#contentCon p 
+{
+	/*background-color: #cfe0fc;*/
+	margin: 15px 15px 15px 15px;
+	/*line-height: 630px;*/
+	display: flex;
+	flex-direction: row;
+	font-size: 15px;
+}
+
+#content1 h2
+{
+	
+}
+
+#content2 
+{
+	padding: 10px 10px 10px 10px;
+	display: flex;
+	flex-direction: column;
+	/*justify-content: flex-end;*/
+	margin-left: auto;
+	width: 316px;
+	height: 150px;
+}
+#content2 h2
+{
+	margin-top: 10px;
+}
+#content3
+{
+	padding: 10px 10px 10px 10px;
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	/*justify-content: flex-end;*/
+}
+
+#content3 h2
+{
+}
+
+/*Page 3*/
+
+#productImages 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+}
+
+/*Get rid of this, here just to give different height*/
+#productImages p
+{
+	font-size: 20px;
+	/*line-height: 250px;*/
+}
+
+.productImg 
+{
+	width: 280px;
+}
+
+
+#contentAreaBig
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+}
+
+/*Get rid of this, here just to give different height*/
+#contentAreaBig p 
+{
+	font-size: 20px;
+	/*line-height: 300px;*/
+}
+
+#promoImageBig
+{
+	font-size: 20px;
+	width: 920px;
+}
+
+
+/*Page 4*/
+
+.productDescLargeLeft 
+{
+	width: 410px;
+}
+
+.productDescLargeRight 
+{
+	width: 410px;
+}
+
+.hero {
+	/*height: 384px;*/
+	width: 980px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: center;
+}
+#mainContact label
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
