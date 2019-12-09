@@ -2,26 +2,23 @@
 <html lang="en">
 <head>
 	<title>SharkArt Contact</title>
-	<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
 </head>
 <body>
-	<div class="container"><!--Start Container-->
+	<div id="siteContainer"><!--Start Container-->
 		<h1 class="hidden">Sonny's contact page</h1>
-		<header class="mainHeader"><!--Start header-->
-			<div class="logoHeader">
-				<img src="images/artShark.jpg" alt="Shark Logo" id="logo">
-			</div>
-			 <nav id="mainNav"><div class="home"><a class="active" href="index.html">Home</a></div><p>-</p> <a href="Illustration.html">Illustration</a><p>-</p> <a href="Ceramic.html">Ceramic/Sculpture</a><p>-</p> <a href="Photography.html">Photography</a><p>-</p><a href="#contact">Contact</a></nav>
-			</nav>
+		<header id="mainHeader"><!--Start header-->
+			
+				<div id="logo"><img src="images/artShark.jpg" alt="Shark Logo" id="logo"></div>
+				<nav id="mainNav"><h2 class="hidden">Top Navigation</h2><div class="home"><a class="active" href="index.html">Home</a></div><p>-</p> <a href="Illustration.html">Illustration</a><p>-</p> <a href="Ceramic.html">Ceramic/Sculpture</a><p>-</p> <a href="Photography.html">Photography</a><p>-</p><a href="#contact">Contact</a></nav>
 		</header><!--Close header-->
 		<main>
-			<section class="hero heroContact">
+			<section class="hero heroContact"><h2 class="hidden">Contact Intro</h2>
 				<h2>FEEL FREE TO CONTACT ME!</h2>
 				<h3>Whether or not I will respond is another matter.</h3>
 			</section>
-			<section id="mainContact"><!--Open Main Contact -->
-				<section id="contactArea"><!--Open contactArea-->
+			<section id="mainContact"><h2 class="hidden">Contact Form</h2><!--Open Main Contact -->
+				<section id="contactArea"><h2 class="hidden">Input Area</h2><!--Open contactArea-->
 					<div id="contactText"></div>
 					<form id="contactForm" action="form.php" method="post">
 					<ul>
@@ -37,16 +34,14 @@
 					<li><label>Comments, Compliments and Criticism:</label></li>
 					<textarea required cols="50" rows="8"></textarea>
 					<input type="submit" value="Submit">
-
+					</ul>
 					</form>
 				</section><!--Close contactArea -->
-				<section id="mapArea"></section>
 			</section><!--Close Main Contact-->
 		</main>
-		<footer class="mainFooter"><!--Start Footer-->
-				<div id="footerNav "><div class="home"><a class="active" href="index.html">Home</a></div><p>-</p> <a href="Illustration.html">Illustration</a><p>-</p> <a href="Ceramic.html">Ceramic/Sculpture</a><p>-</p> <a href="Photography.html">Photography</a><p>-</p><a href="#contact">Contact</a></nav>
-			</div>
-			<div class="socialMedia"></div>
+		<footer id="mainFooter"><!--Start Footer-->
+				<div id="footerNav"><div class="home"><a class="active" href="index.html">Home</a></div><p>-</p> <a href="Illustration.html">Illustration</a><p>-</p> <a href="Ceramic.html">Ceramic/Sculpture</a><p>-</p> <a href="Photography.html">Photography</a><p>-</p><a href="#contact">Contact</a></nav></div>
+				<div id="copyRight"><p>c2019 Nicholas Amerongen</p></div>
 		</footer><!--Close Footer-->
 	</div><!--Close Container-->
 </body>
